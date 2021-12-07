@@ -1,0 +1,15 @@
+ORIGIN IS (360, 240); 	// (1) 原点移至(360, 240)
+SCALE IS (100, 100);	 // (2) 图形放大100
+//SCALE IS (100, 100/3);	// (3) 纵坐标缩小为三分之一
+--ROT IS PI/2;；		// (4) 逆时针旋转90度
+
+-- 绘制轨迹
+size is 2;
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (cos(T), sin(T));
+
+size is 5;
+color is (0,255,0);
+origin is (700,700);
+SCALE IS (200, 200);
+for q from 0 to pi*2 step pi/1000 draw (sin(9*q),sin(8*q));
+--for t from 0 to 3 step 0.05 draw (t,1.5**t);
