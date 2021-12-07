@@ -5,11 +5,11 @@ SCALE IS (100, 100);	 // (2) 图形放大100
 
 -- 绘制轨迹
 size is 2;
-FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (cos(T), sin(T));
+--FOR T FROM 0 TO 2*PI STEP PI/50 DRAW (cos(T), sin(T));
 
-size is 5;
-color is (0,255,0);
-origin is (700,700);
-SCALE IS (200, 200);
-for q from 0 to pi*2 step pi/1000 draw (sin(9*q),sin(8*q));
---for t from 0 to 3 step 0.05 draw (t,1.5**t);
+size is 1;
+color is (255,0,0);
+origin is (500,500);
+SCALE IS (300, 300);
+for q from 0 to pi*2 step pi/10000 draw (sin(20*q),sin(21*q));
+--for t from 0 to 1000 step 1 draw (t,-1.5**2**(t/250));

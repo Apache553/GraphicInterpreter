@@ -29,7 +29,7 @@ namespace gi
 		};
 		RegexStruct regex_set =
 		{
-			std::wregex(LR"((\+|-)?([1-9][0-9]*|0)(\.([0-9]*)?)?)"),
+			std::wregex(LR"(([1-9][0-9]*|0)(\.([0-9]*)?)?)"),
 			std::wregex(LR"(([a-zA-Z_][0-9a-zA-Z_]*))"),
 			std::wregex(LR"(((--)|(//)).*)"),
 			std::wregex(LR"([\+\-\*\/])"),
